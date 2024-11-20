@@ -1,0 +1,9 @@
+<h1>Your Notifications</h1>
+<ul>
+    {% for notification in notifications %}
+        <li>
+            {{ notification.message }} Your Task is still pending {{ notification.created_at }}
+            <a href="#">Mark as Read</a>
+        </li>
+    {% endfor %}
+</ul>
